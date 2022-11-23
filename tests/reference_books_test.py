@@ -11,7 +11,7 @@ class TestReferenceBooks:
     @allure.label("submodul", "Справочник оплат")
     @allure.feature("Создание новой позиции справочника оплат")
     @allure.label("microservice", "referenceBooks")
-    @allure.tag("pozitive")
+    @allure.tag("pozitive", "smoke")
     @allure.link('https://bitrix.ivcmf.by/knowledge/SPB/referenceBooksPayment', '', 'Справочник оплат')
     @allure.title("Создание новой позиции справочника оплат (название: валидное)")
     def test_ReferenceBooksPaymentAddValidAll(self):
