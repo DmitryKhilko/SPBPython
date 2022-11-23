@@ -5,10 +5,12 @@ import allure
 @allure.label("layer", "ui")
 class TestReferenceBooks:
 
+    @allure.id("142")
     @allure.label("owner", "khilko")
     @allure.manual
     @allure.label("submodul", "Справочник оплат")
     @allure.feature("Создание новой позиции справочника оплат")
+    @allure.label("microservice", "referenceBooks")
     @allure.tag("pozitive")
     @allure.link('https://bitrix.ivcmf.by/knowledge/SPB/referenceBooksPayment', '', 'Справочник оплат')
     @allure.title("Создание новой позиции справочника оплат (название: валидное)")
@@ -24,10 +26,12 @@ class TestReferenceBooks:
             with allure.step("Ожидаем, что новая позиция справочника отобразилась в таблице на странице 'Справочник оплат'"):
                 pass
 
+    @allure.id("141")
     @allure.label("owner", "khilko")
     @allure.manual
     @allure.label("submodul", "Справочник оплат")
     @allure.feature("Создание новой позиции справочника оплат")
+    @allure.label("microservice", "referenceBooks")
     @allure.tag("negative")
     @allure.link('https://bitrix.ivcmf.by/knowledge/SPB/referenceBooksPayment', '', 'Справочник оплат')
     @allure.title("Создание новой позиции справочника оплат (~название: пустое)")
