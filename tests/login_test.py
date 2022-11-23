@@ -72,4 +72,3 @@ class TestLogin:
                 pass
         with allure.step("Закрыть браузер"):
             pass
-
