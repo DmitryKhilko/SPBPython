@@ -6,29 +6,30 @@ import allure
 @allure.label("module", "Квалификационный экзамен")
 @allure.label("submodule", "Расписание тестирования")
 @allure.label("microservice", "ke_exam")
+@allure.link('https://bitrix.ivcmf.by/knowledge/SPB/keExam', '', 'Расписание КЭ в форме тестирования')
 class TestKE:
 
+    @allure.id("159")
     @allure.manual
     @allure.feature("Создание экзамена")
-    @allure.tag("pozitive", "smoke")
-    @allure.link('https://bitrix.ivcmf.by/knowledge/SPB/keExam', '', 'Расписание КЭ в форме тестирования')
+    @allure.tag("positive", "smoke")
     @allure.title("Создание нового экзамена (все значения валидные)")
     def test_ke_test_valid_all(self):
         pass
 
+    @allure.id("160")
     @allure.manual
     @allure.feature("Создание экзамена")
     @allure.tag("negative")
-    @allure.link('https://bitrix.ivcmf.by/knowledge/SPB/keExam', '', 'Расписание КЭ в форме тестирования')
-    @allure.title("Создание нового экзамена (все значения пустые)")
+    @allure.title("Создание нового экзамена (~все значения пустые)")
     def test_ke_test_empty_all(self):
         pass
 
+    @allure.id("161")
     @allure.manual
     @allure.feature("Создание экзамена")
     @allure.tag("negative")
-    @allure.link('https://bitrix.ivcmf.by/knowledge/SPB/keExam', '', 'Расписание КЭ в форме тестирования')
-    @allure.title("Создание нового экзамена (дата экзамена: пусто; остальные поля валидные)")
+    @allure.title("Создание нового экзамена (~дата экзамена: пусто; остальные поля валидные)")
     def test_ke_test_empty_exam_date(self):
         pass
 

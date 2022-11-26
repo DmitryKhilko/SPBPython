@@ -7,15 +7,17 @@ import allure
 @allure.label("microservice", "referenceBooks")
 class TestReferenceBooks:
 
+    @allure.id("156")
     @allure.manual
     @allure.label("submodule", "Справочник оплат")
     @allure.feature("Создание новой позиции справочника оплат")
-    @allure.tag("pozitive", "smoke")
+    @allure.tag("positive", "smoke")
     @allure.link('https://bitrix.ivcmf.by/knowledge/SPB/referenceBooksPayment', '', 'Справочник оплат')
     @allure.title("Создание новой позиции справочника оплат (название: валидное)")
     def test_reference_books_payment_add_valid_all(self):
         pass
 
+    @allure.id("158")
     @allure.manual
     @allure.label("submodule", "Справочник оплат")
     @allure.feature("Создание новой позиции справочника оплат")
@@ -25,6 +27,7 @@ class TestReferenceBooks:
     def test_reference_books_payment_add_empty_title(self):
         pass
 
+    @allure.id("157")
     @allure.manual
     @allure.label("submodule", "Справочник оплат")
     @allure.feature("Создание новой позиции справочника оплат")
